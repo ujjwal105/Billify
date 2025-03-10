@@ -1,13 +1,12 @@
-import Layout from "./components/layout/layout";
+import Layout from "./components/layout/Layout";
 import { Theme, ThemeProvider } from "./components/theme-provider";
+import Invoice from "./Pages/Invoice";
 
 function App() {
   return (
     <ThemeProvider defaultTheme={Theme.SYSTEM} storageKey="ui-theme">
       <Layout>
-        <div className=" flex items-center justify-center h-screen">
-          <p>hello</p>
-        </div>
+        <Invoice />
       </Layout>
     </ThemeProvider>
   );

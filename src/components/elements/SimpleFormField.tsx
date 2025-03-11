@@ -244,10 +244,9 @@ export default function SimpleFormField({
                       aria-expanded={open}
                       disabled={disabled}
                       className={cn(
-                        "justify-between w-full font-medium",
+                        "justify-between w-full font-medium truncate",
                         !field.value && "text-muted-foreground"
-                      )}
-                    >
+                      )}>
                       <span className="truncate">
                         {field.value
                           ? framework?.find(
@@ -261,8 +260,7 @@ export default function SimpleFormField({
                 </PopoverTrigger>
                 <PopoverContent
                   className="p-2 w-[var(--radix-popover-trigger-width)] min-w-48 max-w-[800px]"
-                  align="start"
-                >
+                  align="start">
                   <Command>
                     <CommandInput placeholder={`Search ${label}...`} />
                     <CommandList className="max-h-[300px] overflow-y-auto">
@@ -286,8 +284,7 @@ export default function SimpleFormField({
                                 form.clearErrors(name);
                               }
                               setOpen(false);
-                            }}
-                          >
+                            }}>
                             <Check
                               className={cn(
                                 "mr-2 h-4 w-4",

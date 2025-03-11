@@ -50,7 +50,7 @@ function ConsignorDetails({ activeState, setActiveState }: any) {
             />
 
             <div className="mt-5 lg:justify-between lg:flex">
-              <div className="gap-4 text-sm lg:ml-2 lg:justify-around lg:flex">
+              <div className="gap-4 w-4/5 text-sm lg:ml-2 lg:justify-around lg:flex">
                 {customerSelected && (
                   <div>
                     <h1 className="font-semibold text-black">

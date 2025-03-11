@@ -2,7 +2,9 @@ import { Globe } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 mt-4 w-full max-w-screen-lg mx-auto px-4">
+    <div className="mt-4 w-full max-w-screen-lg mx-auto px-4">
+      {" "}
+      {/*sticky top-0 */}
       <div className="w-full border rounded-md shadow p-2 backdrop-blur-3xl bg-white dark:bg-zinc-700">
         <div className="flex items-center justify-between px-4 md:px-6">
           <img

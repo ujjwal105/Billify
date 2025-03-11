@@ -1,13 +1,13 @@
 import { Card } from "@/components/ui/card";
-import InvoiceCardLayout from "./InvoiceCard/InvoiceCardLayout";
+import Stepper from "./InvoiceCard/Stepper";
 
 function Invoice() {
   return (
     <div className="flex flex-col lg:flex-row gap-4 m-4">
       <div className="w-full lg:w-1/2">
-        <InvoiceCardLayout />
+        <Stepper />
       </div>
-      <Card className="w-full lg:w-1/2">Card2</Card>
+      <Card className="w-full lg:w-1/2 flex items-center justify-center dark:bg-gray-950">Card2</Card>
     </div>
   );
 }
